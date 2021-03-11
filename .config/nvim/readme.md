@@ -6,7 +6,7 @@ https://github.com/neovim/neovim/wiki/Installing-Neovim
 pip3 install --user pynvim
 
 ### mac
-brew install fzf
+brew install fzf  
 brew install ag
 
 ### linux
