@@ -27,3 +27,5 @@ Plug 'junegunn/fzf.vim'
 
 nvim
 :PlugInstall
+
+## install jetbrain mono regular
