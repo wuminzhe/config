@@ -347,18 +347,18 @@ highlight Comment cterm=italic gui=italic
 " set guifont=Menlo\ Regular:h40
 " set guifont=JetBrains\ Mono\ Regular:h50
 
-" Áº©Ëøõ
-set tabstop=2 " Ë°®Á§∫Êåâ‰∏Ä‰∏™tab‰πãÂêéÔºåÊòæÁ§∫Âá∫Êù•ÁöÑÁõ∏ÂΩì‰∫éÂá†‰∏™Á©∫Ê†ºÔºåÈªòËÆ§ÁöÑÊòØ8‰∏™
-set shiftwidth=2 " Ë°®Á§∫ÊØè‰∏ÄÁ∫ßÁº©ËøõÁöÑÈïøÂ∫¶Ôºå‰∏ÄËà¨ËÆæÁΩÆÊàêË∑ü softtabstop ‰∏ÄÊ†∑
-set softtabstop=0 " Ë°®Á§∫Âú®ÁºñËæëÊ®°ÂºèÁöÑÊó∂ÂÄôÊåâÈÄÄÊ†ºÈîÆÁöÑÊó∂ÂÄôÈÄÄÂõûÁº©ËøõÁöÑÈïøÂ∫¶
-set expandtab " ÂΩìËÆæÁΩÆÊàê expandtab Êó∂ÔºåÁº©ËøõÁî®Á©∫Ê†ºÊù•Ë°®Á§∫Ôºånoexpandtab ÂàôÊòØÁî®Âà∂Ë°®Á¨¶Ë°®Á§∫‰∏Ä‰∏™Áº©Ëøõ
-set smarttab " Ê†πÊçÆÊñá‰ª∂‰∏≠ÂÖ∂‰ªñÂú∞ÊñπÁöÑÁº©ËøõÁ©∫Ê†º‰∏™Êï∞Êù•Á°ÆÂÆö‰∏Ä‰∏™ tab ÊòØÂ§öÂ∞ë‰∏™Á©∫Ê†º
+" Indention
+set tabstop=2
+set shiftwidth=2
+set softtabstop=0
+set expandtab
+set smarttab
 set shiftround
 xnoremap < <gv
 xnoremap > >gv
 
 " Display extra whitespace
-set list lcs=tab:¬ª¬∑,trail:¬∑,nbsp:¬∑
+set list lcs=tab:>·,trail:·,nbsp:·
 
 " Make it obvious where 80 characters is
 " set textwidth=80
@@ -367,7 +367,7 @@ set list lcs=tab:¬ª¬∑,trail:¬∑,nbsp:¬∑
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
 
-" Êåâ,eÂú®Êñ∞tabÊâìÂºÄÊñá‰ª∂
+" Open new tab
 nmap <leader>e :tabe<Space>
 
 " Quickly edit/reload the vimrc file
@@ -404,7 +404,7 @@ endif
 
 " easy motion
 
-" ÈªèË¥¥Ë°å‰∏∫‰øÆÊîπ
+" Change the behavior of paste
 " https://stackoverflow.com/questions/25267062/after-pasting-a-yanked-line-in-vim-why-cant-i-paste-it-again
 xnoremap p pgvy 
 
