@@ -22,7 +22,7 @@ Plug 'junegunn/fzf.vim'
 " Ack
 Plug 'mileszs/ack.vim'
 
-" Áä∂ÊÄÅÊ†è
+" Status bar
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
@@ -32,15 +32,8 @@ Plug 'vim-airline/vim-airline-themes'
 " insert or delete brackets, parens, quotes in pair
 Plug 'jiangmiao/auto-pairs'
 
-" Plug 'jeffkreeftmeijer/vim-numbertoggle'
-
-" Ëá™Âä®ÂÆåÊàê
-" deoplete requires Neovim or Vim8 with if_python3.
-" Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-" Ê≥®Èáä
 " Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-commentary'
 
@@ -290,7 +283,7 @@ let g:fzf_nvim_statusline = 0
 nnoremap <silent> <Leader>f :Files<CR>
 nnoremap <silent> <Leader>b :Buffers<CR>
 
-" ÈáçÊñ∞ÂÆö‰πâAgÂëΩ‰ª§
+" Redefine Ag command
 " https://vi.stackexchange.com/questions/13965/what-is-command-bang-nargs-in-a-vimrc-file
 " https://vi.stackexchange.com/questions/14242/how-to-call-the-fzf-ag-command-with-multiple-arguments
 " function! s:ag_with_opts(arg, bang)
@@ -301,7 +294,7 @@ nnoremap <silent> <Leader>b :Buffers<CR>
 " endfunction
 " autocmd VimEnter * command! -nargs=* -bang Ag call s:ag_with_opts(<q-args>, <bang>0)
 
-" Â∞Ü:AgÂëΩ‰ª§ÁªëÂÆöÂà∞<leader>g‰∏äÔºåËøôÊ†∑Â∞±ÂèØ‰ª•Âú®VimÂÜÖÊêúÁ¥¢È°πÁõÆÂÜÖÁöÑÊñáÊú¨‰∫Ü
+" bind :Ag cmd to <leader>g, so you can search text in vim
 " nnoremap <Leader>g :Ag<Space>
 
 " ACK
