@@ -1,0 +1,17 @@
+{
+  "list.normalMappings": {
+    "t": "action:tabe",
+    "v": "action:vsplit",
+    "s": "action:split",
+    "d": "expr:GetDeleteAction"
+  },
+  "list.insertMappings": {
+    "<C-t>": "action:tabe",
+    "<C-w>": "command:wincmd k"
+  },
+  "rust-analyzer.inlayHints.enable": true,
+  "rust-analyzer.inlayHints.typeHints": true,
+  "rust-analyzer.inlayHints.chainingHints": true,
+  "rust-analyzer.checkOnSave.enable": false,
+  "suggest.noselect": false
+}
